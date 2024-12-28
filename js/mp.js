@@ -743,6 +743,7 @@ function start_till_finish_UI() {
     
         let start_wait = 10;
     
+        console.log(ang_dast);
         if (ang_dast > 35 && ang_dast < 50)
         {
             timer_state('start');
