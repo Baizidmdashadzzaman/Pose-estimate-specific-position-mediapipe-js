@@ -744,7 +744,7 @@ function start_till_finish_UI() {
         let start_wait = 10;
     
         console.log(ang_dast);
-        if (ang_dast > 35 && ang_dast < 50)
+        if (ang_dast > 15 && ang_dast < 60)
         {
             timer_state('start');
             let percentage = ((timer / 10) / start_wait) * 100;
