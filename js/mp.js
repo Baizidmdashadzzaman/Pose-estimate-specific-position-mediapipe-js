@@ -4,7 +4,7 @@ var finished_course = false;
 
 exer_ob = [
     {
-        name: 'Jumping Jack',
+        name: 'জাম্পিং জ্যাক',
         type: 'time',
         gif_name: 'jumping_jack.gif',
         reps: 20,
@@ -15,7 +15,7 @@ exer_ob = [
     },
 
     {
-        name: 'Squat',
+        name: 'স্কোয়াট',
         type: 'number',
         gif_name: 'squat.gif',
         reps: 5,
@@ -26,7 +26,7 @@ exer_ob = [
     },
 
     {
-        name: 'Forward Bend',
+        name: 'ফরোয়ার্ড বেন্ড',
         type: 'number',
         gif_name: 'forward_bend.gif',
         reps: 5,
@@ -706,9 +706,9 @@ function detection() {
         undefined === history_landmarks['1'] ||
         undefined === history_landmarks['2']) return;
         
-    if (active_excercise['name'] === 'Squat') Squat();
-    if (active_excercise['name'] === 'Jumping Jack') JumpingJack();
-    if (active_excercise['name'] === 'Forward Bend') ForwardBend();
+    if (active_excercise['name'] === 'স্কোয়াট') Squat();
+    if (active_excercise['name'] === 'জাম্পিং জ্যাক') JumpingJack();
+    if (active_excercise['name'] === 'ফরোয়ার্ড বেন্ড') ForwardBend();
 
     if (active_excercise['done'] === active_excercise['reps']) 
     {
@@ -743,7 +743,7 @@ function start_till_finish_UI() {
     
         let start_wait = 10;
     
-        console.log(ang_dast);
+        //console.log(ang_dast);
         // if (ang_dast > 35 && ang_dast < 50)
 
         if (ang_dast > 5 && ang_dast < 100)
@@ -802,7 +802,7 @@ function initiate_exercise() {
     }
     timer_state('start');
 
-    wait_ui.innerHTML = `Next exercise is ${active_excercise['name']}... ${parseInt(wait_time - (timer / 10))} seconds remaining`;
+    wait_ui.innerHTML = `পরবর্তী ব্যায়াম হচ্ছে ${active_excercise['name']}... ${parseInt(wait_time - (timer / 10))} সেকেন্ড বাকি`;
 
     if ((timer / 10) > wait_time) {
 
